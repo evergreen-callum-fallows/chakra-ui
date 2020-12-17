@@ -7,6 +7,7 @@ import * as React from "react";
 interface IPage {
     subtitle: string;
     title: string;
+    type: string;
     buttonText: string;
 }
 
@@ -21,7 +22,7 @@ const Page = (props: IPage) => {
         <Grid spacing={16}>
             <Heading paddingLeft={8} paddingTop={8} margin={0} color={"gray.0"} fontSize={"18px"}>{props.subtitle}</Heading>
             <Wrap color="white" textAlign="left" justifyContent="space-evenly" flexDirection="row">
-                {Cards}
+                {props.type === "dashboard" && Cards}
             </Wrap>
             <Box padding={8} textAlign={"right"}>
                 <Button rightIcon={<MdArrowForward />} width={"200px"} size={"sm"} colorScheme="green">{props.buttonText}</Button>
