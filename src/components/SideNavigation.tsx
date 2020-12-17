@@ -11,11 +11,11 @@ interface ISideNavigation {
 const SideNavigation = (props: ISideNavigation): JSX.Element => {
     return  <Flex flexDirection={"column"} alignItems={"space-between"} height="100%" spacing={16}>
         <Flex flexDirection="column">
-        <List>
+        <List display={["none", "block"]}>
             <Logo background={'green.0'} color={'white'} />
         </List>
         </Flex>
-        <Flex height={"90%"} justifyContent={"center"} flexDirection="column">
+        <Flex height={["auto", "90%"]} justifyContent={"center"} flexDirection={["row", "column"]}>
             {props.navigationLinks}
         </Flex>
     </Flex>

@@ -8,11 +8,13 @@ interface ICardInterface {
     date_of_birth: string
 }
 
+
 const Card = (props: ICardInterface): JSX.Element => {
-    return <List background={"white"} spacing={4} boxShadow="md" margin="16px" padding="16px" borderColor="gray.100" borderWidth="1px" borderRadius="16px">
+    return <Box justifyContent={["space-around", "left"]} alignSelf="center" margin={[2]}>
+        <List background={"white"} spacing={4} boxShadow="md" margin={["0 auto", "8px"]} padding="16px" borderColor="gray.100" borderWidth="1px" borderRadius="16px">
         <ListItem>
             <Text alignText="left" fontWeight="500" display="block" fontSize="16" color="black">{props.name}</Text>
-            <Text display="block" color="gray.75">{props.nhsNumber}</Text>
+            <Text display="block" color="gray.75">NHS {props.nhsNumber}</Text>
             <Divider marginTop="8px"/>
         </ListItem>
         <ListItem>
@@ -30,6 +32,7 @@ const Card = (props: ICardInterface): JSX.Element => {
             </Box>
         </ListItem>
     </List>
+    </Box>
 }
 
 export default Card;

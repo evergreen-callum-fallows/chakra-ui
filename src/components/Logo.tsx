@@ -14,7 +14,7 @@ const Logo = (props: ILogo): JSX.Element => {
     return <List>
         <ListItem padding={4} onClick={props.onClick} background={props.background}>
             <Flex alignItems={"center"} padding={2} flexDirection={"column"}>
-                <img width={80} src={logoWhite} alt={"Evergreen Life"} />
+                <img width={70} src={logoWhite} alt={"Evergreen Life"} />
             </Flex>
         </ListItem>
     </List>;
