@@ -13,8 +13,6 @@ import theme from "./appTheme";
 import {infoFeedItems} from "./prototypes/App.prototype";
 import Page from "./components/Page";
 
-
-
 export const App = () => {
     const [activeItem, setActiveItem] = useState(0);
 
@@ -37,7 +35,7 @@ export const App = () => {
                   <SideNavigation activeItem={activeItem} navigationLinks={NavigationLinks} />
                 </Box>
                 <Box position={"relative"} zIndex={2} sm={12} boxShadow={"lg"} flexGrow={2} height="100%" background={"gray.10"}>
-*                   <Page title={"Dashboard"} type={"dashboard"} subtitle={"Last visited patients"} buttonText={"See all patients"}/>
+                   <Page title={"Dashboard"} type={"dashboard"} subtitle={"Last visited patients"} buttonText={"See all patients"}/>
                 </Box>
                 <Box position={"relative"} background={"white"} zIndex={1} width={"20vw"} height="100%">
                 <InfoPanel data={infoFeedItems}/>
