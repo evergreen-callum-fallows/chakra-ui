@@ -17,7 +17,7 @@ const InfoPanel = (props: IInfoPanel): JSX.Element => {
 
     const FeedItems = props.data && props.data.map(data => <InfoArticle data={data} /> )
 
-    return  <Grid height="100vh" background="green.0" spacing={16}>
+    return  <Grid height="100vh" background="white" spacing={16}>
         {FeedItems}
     </Grid>
 }

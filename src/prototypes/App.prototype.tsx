@@ -24,17 +24,18 @@ export const lastVisitedPatientsMock = [
         gender: "male",
         date_of_birth:"14-Jul-1956 (39y)"
     }]
+
 export const infoFeedItems = [
     {
-        "name": "Joe Bloggs",
-        "message": "This is a message",
-        "date": "Date"
+        "name": "SMITH, Adam",
+        "message": "This is an info feed item, it will contain informaton that is important to be displayed in this panel. Most likely an excerpt so, limited to certain max characters ",
+        "date": "21-Jul-1956"
     }, {
-        "name": "Joe Bloggs",
-        "message": "This is a message",
-        "date": "Date"
+        "name": "TAYLOR, Elizibeth",
+        "message":"This is an info feed item, it will contain informaton that is important to be displayed in this panel. Most likely an excerpt so, limited to certain max characters ",
+        "date": "21-Jul-1956"
     },{
         "name": "Joe Bloggs",
-        "message": "This is a message",
-        "date": "Date"
+        "message":"This is an info feed item, it will contain informaton that is important to be displayed in this panel. Most likely an excerpt so, limited to certain max characters ",
+        "date": "UNKNOWN"
     }];

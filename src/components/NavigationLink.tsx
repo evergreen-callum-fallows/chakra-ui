@@ -11,7 +11,7 @@ interface INavigationLink {
 const NavigationLink = (props: INavigationLink): JSX.Element => {
 
     const activeItem = props.activeItem === props.index;
-    return <List>
+    return <List cursor={'pointer'}>
         <ListItem padding={4} onClick={props.onClick} background={activeItem ? 'white' : 'green.0'}>
             <Flex alignItems={"center"} padding={2} flexDirection={"column"}>
                 {props.icon}
